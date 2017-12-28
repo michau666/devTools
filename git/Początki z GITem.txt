@@ -1,0 +1,54 @@
+GIT:
+
+1. Ustawienia globalne:
+
+-- Okreslanie użytkownika do zatwierdzania
+git config --global user.name 'gorskim'
+git config --global user.email  'michal.gorski@orteh.pl'
+
+2. Help:
+git help config
+
+3. Podstawowe komendy:
+
+Inicjowanie projektu
+	git init '<project>'
+
+Dodawanie plików do stage
+	git add .
+Usuwanie plików ze stage
+	git rm --cached *.txt
+Zatwierdzanie zmian z komentarzem
+	git commit -m 'komentarz'
+Lista zmian
+	git log
+Statusy plików
+	git status
+Widok zmian w plikach w WORKING DIRECTORY
+	git diff
+Widok zmian w plikach w STAGE
+	git diff --cached
+Wyjście z trybu edycji terminala
+	SHIFT+Z+Z
+Log w skrótowej formie
+	git log --oneline
+Szybkie zatwierdzenie zmian
+	git commit -a -m 'komentarz'
+Szybki widok statusu
+	git status -s
+Dodanie repozytorium do listy wysyłkowej GitHub'a (1 raz) 
+	git remote add origin git@github.com:michalgorskiorteh/TestProject.git
+Wysłanie do repozytorium GitHub'a
+	git push origin <wybrany branch do wysłania>
+	
+3. Branches
+
+Lista branchy
+	git branch
+Tworzenie branchy
+	git branch <name>
+Wybranie branchy
+	git checkout <name>
+	
+4. Klonowanie
+	git clone <ssh project name>
